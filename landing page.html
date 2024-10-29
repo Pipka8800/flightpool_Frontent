@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авиакомпания</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo test-0-logo">
+                <a href="https://github.com/Pipka8800/flightpool_Frontent" class="">
+                <img src="logo.png" alt="Логотип авиакомпании">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="test-0-nav-1">Акции</a></li>
+                    <li><a href="#" class="test-0-nav-2">Поиск</a></li>
+                    <li><a href="#" class="test-0-nav-3">Регистрация на рейс</a></li>
+                    <li><a href="#" class="test-0-nav-4">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="booking-principle">
+        <div class="container">
+            <div class="center1"><h2>Принцип накопления бронирований</h2></div>
+            <div class="principle-info">
+                <div class="info-item">
+                    <h3>Выбор даты</h3>
+                    <div class="date-picker">
+                        <input type="date" id="date-input">
+                    </div>
+                    <div class="date-info" id="date-info"></div>
+                </div>
+                <div class="info-item">
+                    <h3>Количество бронирований</h3>
+                    <div class="booking-count">
+                        <input type="number" id="booking-count" min="1" max="100">
+                    </div>
+                    <div class="booking-info" id="booking-info"></div>
+                </div>
+                <div class="info-item">
+                    <h3>Стоимость и вероятность вылета</h3>
+                    <div class="price-input">
+                        <input type="number" id="price-input" min="0">
+                    </div>
+                    <div class="price-chart" id="price-chart"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust">
+        <div class="container">
+            <h2>Доверьте свой полет нам</h2>
+            <p>В мире, где выбор авиакомпаний огромен, мы понимаем, 
+                насколько важно найти ту, которая заслуживает вашего доверия. 
+               <b>Мы предлагаем не просто полет, а путешествие, наполненное заботой, комфортом и безопасностью.</b></p>
+            <p><b>Опыт и профессионализм</b> – это наша визитная карточка. Мы имеем богатый опыт в сфере авиаперевозок, 
+                наши пилоты – настоящие профессионалы, прошедшие строжайший отбор и подготовку. 
+                Мы строго следим за техническим состоянием самолетов, чтобы вы могли быть уверены 
+                в их надежности и безопасности.</p>
+            <p><b>Комфорт и сервис</b> – это то, что делает путешествие приятным. Мы заботимся о каждом путешественнике: 
+                предлагаем удобные кресла, вкусное 
+                питание, развлечения на борту и внимательный сервис.</p>
+            <p><b>Особое внимание мы уделяем</b> безопасности, так как это наш главный приоритет. 
+                Мы используем самые современные технологии 
+                и системы безопасности, чтобы гарантировать вам спокойный и безопасный полет.</p>
+            <p><b>Доверьте свой полет нам – и вы оцените настоящий комфорт и безопасность в небе!</b></p>
+        </div>
+    </section>
+
+    <section class="search-form">
+        <div class="container">
+            <div class="center1"><h2>Поиск билетов</h2></div>
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label for="from">Откуда:</label>
+                    <input type="text" id="from" name="from" class="test-0-fd">
+                </div>
+                <div class="form-group">
+                    <label for="to">Куда:</label>
+                    <input type="text" id="to" name="to" class="test-0-fa">
+                </div>
+                <div class="form-group">
+                    <label for="departure">Туда:</label>
+                    <input type="date" id="departure" name="departure" class="test-0-fdt-">
+                </div>
+                <div class="form-group">
+                    <label for="return">Обратно:</label>
+                    <input type="date" id="return" name="return" class="test-0-fat">
+                </div>
+                <div class="form-group">
+                    <label for="passengers">Количество пассажиров:</label>
+                    <input type="number" id="passengers" name="passengers" min="1" max="8" class="test-0-fnp">
+                </div>
+                <button type="submit" class="test-0-fbs">Найти билеты</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="promotions">
+        <div class="container">
+            <div class="center1"><h2>Акции</h2></div>
+            <div class="promotion-list">
+                <!-- Акции -->
+                <div class="promotion">
+                    <img src="images/promotions/promotion1.jpg" alt="Акция 1" class="test-0-ai">
+                    <h3 class="test-0-an">Название акции 1</h3>
+                    <p class="test-0-ad">Краткое описание акции 1.</p>
+                    <button class="test-0-abm">Подробнее</button>
+                </div>
+                <div class="promotion">
+                    <img src="images/promotions/promotion3.jpg" alt="Акция 2" class="test-0-ai">
+                    <h3 class="test-0-an">Название акции 2</h3>
+                    <p class="test-0-ad">Краткое описание акции 2.</p>
+                    <button class="test-0-abm">Подробнее</button>
+                </div>
+                <div class="promotion">
+                    <img src="images/promotions/promotion4.jpg" alt="Акция 3" class="test-0-ai">
+                    <h3 class="test-0-an">Название акции 3</h3>
+                    <p class="test-0-ad">Краткое описание акции 3.</p>
+                    <button class="test-0-abm">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscription">
+        <div class="container">
+            <h2>Подписка на закрытые акции</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="test-0-sie">
+                </div>
+                <button type="submit" class="test-0-sbs">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="test-0-phone">Телефон: 8 (800) 100-10-10</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Правила</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
